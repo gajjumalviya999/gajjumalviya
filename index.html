@@ -11,6 +11,8 @@
                 background-color: #DDDDDD;
             }
             #header{
+                position:sticky;
+                top:0;
                 height:40px;
                 width:100%;
                 background-color: black;
@@ -20,6 +22,7 @@
                 width: 40%;
                 float:left;
                 text-align: center;
+                height: auto;
             }
             #left img{
                 margin-bottom: 0px;
@@ -29,6 +32,7 @@
                
             }
             #Right{
+                height: auto;
                 width:50%;
                 float:left;
                 margin-top: 0px;
@@ -89,11 +93,13 @@
                 text-decoration: none;
             }
             #socialmedia{
+                align-items: center;
                 text-align: center;
                 text-decoration: none;
-                margin:30px 0px;
+                margin:0px 0px;
             }
             #socialmedia img{
+                padding: 0px 0px 0px 0px;
                 width: 40px;
                 background-color: black;
                 border-radius: 50%;
@@ -101,79 +107,34 @@
             }
             #socialmedia ul{
                 list-style-type: none;
-                margin: 20px;
                 text-decoration: none;
                 display: inline-block;
             }
             #socialmedia  ul li{
-                padding-left: 5px;
+                padding-left:0px;
                 display:inline;
             }
             #downloadResume{
+                margin-top: 50px;;
                 padding-left: 50px;
-                margin-bottom: 20px;
+               
             }
-            #contactsection{
+            #contactdiv{
                 height: 500px;
                 background-color: aqua;
-                overflow: auto;
-               
+                overflow: auto;  
             }
           
         </style>   
     </head>
     <body>
         <header id="header"></header>
-        <section id="Left">
+        <div id="Left">
+            <div>
             <img  src=" image\Gajendra_M_Photo-removebg-preview.png"> 
-            </section>
-        <section id ="Right">
-                <section id="Hello">
-                    <p>Hello,</p>
-                </section>
-                <section id="name">
-                    <h1 >I'M <span style="color: #4ac3bf;">Gajendra Malviya</span> </h1>
-                </section>
-                <section id="Description1">
-                        <h2 style="font-size: 24px; margin: 20px 0 0 0;">
-                        Full Stack Developer <span style="color: #4ac3bf;">&</span> Tech Enthusiast
-                    </h2>
-                </section>
-                <section id="Description2">
-                <p> A Gate Qualified Full Stack Developer 
-                    Open to opporunity at seeking New Position in IT industries</p>
-                    <p>Competitive Programming | DSA | Java</p>
-                    <p>Mathematics Teacher</p>
-                </section>
-                <section id="portfolio" class="width-100 align-center">
-                    <ul class="align-center li-item">
-                        <li>
-                            <a href="#">
-                            <img src="image\IMG_20200310_180405_183.jpg">
-                            <p>Profile</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="files\GajendraMalviyaResume.pdf">
-                            <img src="image\Resume2.jpg">
-                            <p>Resume</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contactsection">
-                            <img src="image\contact.jpg">
-                            <p>Contact</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <img src="image\portfolio.9155d173.png">
-                            <p>Work</p>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="SocialMedia">
+            </div>
+            <div>
+                <div id="SocialMedia">
                     <ul>
                         <li>
                             <a href="https://github.com/gajjumalviya999" >
@@ -206,16 +167,64 @@
                         </li>
 
                     </ul>
-                </section>
-                <section class="align-center" id="DownloadResume" >
+                </div>
+               
+            </div>
+            </div>
+        <div id ="Right">
+                <div id="Hello">
+                    <p>Hello,</p>
+                    </div>
+                <div id="name">
+                    <h1 >I'M <span style="color: #4ac3bf;">Gajendra Malviya</span> </h1>
+                    </div>
+                <div id="Description1">
+                        <h2 style="font-size: 24px; margin: 20px 0 0 0;">
+                        Full Stack Developer <span style="color: #4ac3bf;">&</span> Tech Enthusiast
+                    </h2>
+                </div>
+                <div id="Description2">
+                <p> A Gate Qualified Full Stack Developer 
+                    Open to opporunity at seeking New Position in IT industries</p>
+                    <p>Competitive Programming | DSA | Java</p>
+                    <p>Mathematics Teacher</p>
+                </div>
+                <div id="portfolio" class="width-100 align-center">
+                    <ul class="align-center li-item">
+                        <li>
+                            <a href="#">
+                            <img src="image\IMG_20200310_180405_183.jpg">
+                            <p>Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="files\GajendraMalviyaResume.pdf">
+                            <img src="image\Resume2.jpg">
+                            <p>Resume</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contactdiv">
+                            <img src="image\contact.jpg">
+                            <p>Contact</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="image\portfolio.9155d173.png">
+                            <p>Work</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="align-center" id="DownloadResume" >
                     <a href="files\GajendraMalviyaResume.pdf" download="GajendraMalviyaResume" >
                         <button class="align-centre">
                             Download Resume
                         </button>
                 </a>
-                </section>
-            </section>
-        </section>
-        
+                </div>
+            </div>
+        </div>
     </body>
 </html>
