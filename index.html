@@ -5,10 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Gajendra Malviya</title>
         <link rel = "icon" href = "image\Gajendra_M_Photo-removebg-preview.png"  type = "image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
         <style>
             body{
                 margin: 0px;
                 background-color: #DDDDDD;
+            }
+            .body-class{
+                height: auto;
+                width:100%;
+        
             }
             #header{
                 position:sticky;
@@ -23,6 +30,8 @@
                 float:left;
                 text-align: center;
                 height: auto;
+                margin-bottom: 50px; 
+
             }
             #left img{
                 margin-bottom: 0px;
@@ -32,6 +41,7 @@
                
             }
             #Right{
+                margin-bottom: 50px;
                 height: auto;
                 width:50%;
                 float:left;
@@ -43,10 +53,11 @@
                 color: black;
             }
              #name h1{
-                 text-align: center;
-                font-size: 50px;
+                text-align: center;
+                font-size: 60px;
+                font-weight: 100;
                 margin: 0px; 
-                font-family:Helvetica,Arial,sans-serif;
+                font-family:'Grenze Gotisch', cursive;
             }
             #Description1{
                 text-align: center;
@@ -124,60 +135,73 @@
                 background-color: aqua;
                 overflow: auto;  
             }
+            footer{
+                height: 20px;
+                background-color: black;
+                width:100%;
+                position: fixed;
+                bottom:0;
+            }
           
         </style>   
     </head>
     <body>
-        <header id="header"></header>
-        <div id="Left">
-            <div>
-            <img  src=" image\Gajendra_M_Photo-removebg-preview.png"> 
-            </div>
-            <div>
-                <div id="SocialMedia">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/gajjumalviya999" >
-                                <img src="image\GitHub.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/gajendramalviya/" ><img src="image\linkedin.jpg"> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://leetcode.com/gajjumalviya999/" ><img src="image\leetcode.jpg"> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href=" mailto:gajjumalviya999@gmail.com"><img src="image\gmail.png"> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/gajendra.malviya.925/" ><img src="image\fb.png"> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/the_branded_kamina__/" ><img src="image\insta.jpg"> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/917770889884" ><img src="image\whatsapp.jpg"> 
-                            </a>
-                        </li>
-
-                    </ul>
+        <div class="body-class">
+            <header id="header">
+            </header>
+            <div id="Left">
+                <div>
+                <img  src=" image\Gajendra_M_Photo-removebg-preview.png"> 
                 </div>
-               
+                <div>
+                    <div id="SocialMedia">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/gajjumalviya999" >
+                                    <img src="image\GitHub.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/gajendramalviya/" ><img src="image\linkedin.jpg"> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://leetcode.com/gajjumalviya999/" ><img src="image\leetcode.jpg"> 
+                                </a>
+                            </li>
+                            <li >
+                                <a href=" mailto:gajjumalviya999@gmail.com"><img src="image\gmail.png"> 
+                                </a>
+                            </li>
+                            <li >
+                                <a href="https://www.facebook.com/gajendra.malviya.925/" ><img src="image\fb.png"> 
+                                </a>
+                            </li>
+                            <li >
+                                <a href="https://www.instagram.com/the_branded_kamina__/" ><img src="image\insta.jpg"> 
+                                </a>
+                            </li>
+                            <li >
+                                <a href="https://wa.me/917770889884" ><img src="image\whatsapp.jpg"> 
+                                </a>
+                            </li>
+                            <li title="click to call (only work in Mobile)">
+                                <a href="tel:+917770889884"><img src="image\call.jpg"> 
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                
+                </div>
             </div>
-            </div>
-        <div id ="Right">
+            <div id ="Right">
                 <div id="Hello">
                     <p>Hello,</p>
-                    </div>
+                </div>
                 <div id="name">
                     <h1 >I'M <span style="color: #4ac3bf;">Gajendra Malviya</span> </h1>
-                    </div>
+                </div>
                 <div id="Description1">
                         <h2 style="font-size: 24px; margin: 20px 0 0 0;">
                         Full Stack Developer <span style="color: #4ac3bf;">&</span> Tech Enthusiast
@@ -225,6 +249,8 @@
                 </a>
                 </div>
             </div>
+            <footer>
+            </footer>
         </div>
     </body>
 </html>
