@@ -20,7 +20,7 @@
             #header{
                 position:sticky;
                 top:0;
-                height:40px;
+                height:30px;
                 width:100%;
                 background-color: black;
             }
@@ -94,13 +94,13 @@
                 border: none;
                 border-radius: 5px;
                 align-items: center;
+                cursor: pointer;
             }
             button:hover{
                background-color: #046d69;
                border-color: none;
             }
-            a {
-                color: black;
+            a { color:whitesmoke;
                 text-decoration: none;
             }
             #socialmedia{
@@ -126,7 +126,7 @@
                 display:inline;
             }
             #downloadResume{
-                margin-top: 50px;;
+                margin-top: 20px;;
                 padding-left: 50px;
                
             }
@@ -142,7 +142,7 @@
                 position: fixed;
                 bottom:0;
             }
-          
+           
         </style>   
     </head>
     <body>
@@ -210,34 +210,35 @@
                 <div id="Description2">
                 <p> A Gate Qualified Full Stack Developer 
                     Open to opporunity at seeking New Position in IT industries</p>
-                    <p>Competitive Programming | DSA | Java</p>
+                    <p>Competitive Programmer | DSA | Java</p>
                     <p>Mathematics Teacher</p>
                 </div>
-                <div id="portfolio" class="width-100 align-center">
+                <div id="portfolicontainer" class="width-100 align-center">
                     <ul class="align-center li-item">
-                        <li>
-                            <a href="#">
-                            <img src="image\IMG_20200310_180405_183.jpg">
-                            <p>Profile</p>
-                            </a>
+                        <li><button id="profileButton">
+                                    <img src="image\IMG_20200310_180405_183.jpg">
+                                    <p>Profile</p>
+                            </button>
+                        </li>
+                        <li><button>
+                                <a href="files\GajendraMalviyaResume.pdf" >
+                                    <img src="image\Resume2.jpg">
+                                    <p>Resume</p>
+                                </a>
+                            </button>
+                        </li>
+                        <li><button>
+                                <a href="contactdiv">
+                                    <img src="image\contact.jpg">
+                                    <p>Contact</p>
+                                </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="files\GajendraMalviyaResume.pdf">
-                            <img src="image\Resume2.jpg">
-                            <p>Resume</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contactdiv">
-                            <img src="image\contact.jpg">
-                            <p>Contact</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <img src="image\portfolio.9155d173.png">
-                            <p>Work</p>
-                            </a>
+                            <button>
+                                <img src="image\portfolio.9155d173.png">
+                                <p>Work</p>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -246,11 +247,12 @@
                         <button class="align-centre">
                             Download Resume
                         </button>
-                </a>
+                    </a>
                 </div>
             </div>
             <footer>
             </footer>
         </div>
     </body>
+    <script src="index.js"></script>
 </html>
