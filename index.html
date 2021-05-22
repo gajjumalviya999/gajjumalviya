@@ -52,7 +52,13 @@
             #Hello{
                 color: black;
             }
-             #name h1{
+            #Left .name{
+                display:none;
+            }
+            #Right .name{
+                display:block;
+            }
+            .name h1{
                 text-align: center;
                 font-size: 60px;
                 font-weight: 100;
@@ -83,7 +89,7 @@
                 
             }
             .li-item li img {
-                 width: 100%;
+                 width: 100px;
                  border-radius: 50%;
             }
             button{
@@ -100,7 +106,7 @@
                background-color: #046d69;
                border-color: none;
             }
-            a { color:whitesmoke;
+            a{ color:whitesmoke;
                 text-decoration: none;
             }
             #socialmedia{
@@ -142,7 +148,40 @@
                 position: fixed;
                 bottom:0;
             }
-           
+           @media all and (max-width: 800px){
+                #Left{
+                    width:100%;
+                    margin-left:0px; 
+                    text-align: center;
+                    height: auto;
+                    margin-bottom: 10px; 
+                } 
+                #Left #dp{
+                    padding: 10px 0px 0px 0px;
+                }
+                #Hello{
+                display: none;
+                }
+                #Right{
+                margin-bottom: 50px;
+                height: auto;
+                width:100%;
+                float:left;
+                margin-top: 0px;
+                }
+                #portfolicontainer ul , #socialmedia ul{
+                    padding-inline-start: 0px;
+                }
+                 #Left .name{
+                    display: block;
+                }
+                #Right .name{
+                    display: none;
+                }
+                #Left .name h1{
+                    font-size: 40px;
+                }
+           }
         </style>   
     </head>
     <body>
@@ -150,8 +189,11 @@
             <header id="header">
             </header>
             <div id="Left">
-                <div>
-                <img  src=" image\Gajendra_M_Photo-removebg-preview.png"> 
+                <div class="name">
+                    <h1 >I'M <span style="color: #4ac3bf;">Gajendra Malviya</span> </h1>
+                </div>
+                <div >
+                <img id="dp" src=" image\Gajendra_M_Photo-removebg-preview.png"> 
                 </div>
                 <div>
                     <div id="SocialMedia">
@@ -199,7 +241,7 @@
                 <div id="Hello">
                     <p>Hello,</p>
                 </div>
-                <div id="name">
+                <div class="name">
                     <h1 >I'M <span style="color: #4ac3bf;">Gajendra Malviya</span> </h1>
                 </div>
                 <div id="Description1">
@@ -216,8 +258,10 @@
                 <div id="portfolicontainer" class="width-100 align-center">
                     <ul class="align-center li-item">
                         <li><button id="profileButton">
+                            <a href="#">
                                     <img src="image\IMG_20200310_180405_183.jpg">
                                     <p>Profile</p>
+                            </a>
                             </button>
                         </li>
                         <li><button>
@@ -228,7 +272,7 @@
                             </button>
                         </li>
                         <li><button>
-                                <a href="contactdiv">
+                                <a href="#">
                                     <img src="image\contact.jpg">
                                     <p>Contact</p>
                                 </a>
