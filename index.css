@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    background-color: #DDDDDD;
+}
+.body-class{
+    height: auto;
+    width:100%;
+
+}
+#header{
+    position:sticky;
+    top:0;
+    height:30px;
+    width:100%;
+    background-color: black;
+}
+#Left{
+    margin-left: 10px;
+    width: 40%;
+    float:left;
+    text-align: center;
+    height: auto;
+    margin-bottom: 50px; 
+
+}
+#left img{
+    margin-bottom: 0px;
+    width:100%;
+    text-align: center;
+    padding: 10px 0px 0px 10px;
+   
+}
+#Right{
+    margin-bottom: 50px;
+    height: auto;
+    width:50%;
+    float:left;
+    margin-top: 0px;
+}
+
+
+#Hello{
+    color: black;
+}
+#Left .name{
+    display:none;
+}
+#Right .name{
+    display:block;
+}
+.name h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0px; 
+    font-family:'Grenze Gotisch', cursive;
+}
+#Description1{
+    text-align: center;
+}
+#Description2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 40px;
+    font-family:Helvetica,Arial,sans-serif;
+}
+.width-100{
+    width:100%;
+}
+
+.align-center{
+    text-align: center;
+}
+.li-item li {
+    margin-top: 40px;
+    display:inline-table;
+    width: 20%;
+    
+}
+.li-item li img {
+     width: 100px;
+     border-radius: 50%;
+}
+button{
+    background-color: #14a8a3;
+    color:whitesmoke;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    transform:scale(1,1);
+    transition: transform 1s;
+}
+button:hover{
+   background-color: #046d69;
+   border-color: none;
+   transform:scale(1.1,1.1);
+}
+a{ color:whitesmoke;
+    text-decoration: none;
+}
+#socialmedia{
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin:0px 0px;
+}
+#socialmedia img{
+    padding: 0px 0px 0px 0px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    transform: scale(1,1);
+    transition: transform 1s;
+}
+#socialmedia ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+#socialmedia  ul li{
+    padding-left:0px;
+    display:inline;
+    
+}
+#socialmedia img:hover{
+    transform: scale(1.3,1.3);
+}
+#downloadResume{
+    margin-top: 20px;;
+    padding-left: 50px;
+   
+}
+#contactdiv{
+    height: 500px;
+    background-color: aqua;
+    overflow: auto;  
+}
+footer{
+    height: 20px;
+    background-color: black;
+    width:100%;
+    position: fixed;
+    bottom:0;
+}
+@media all and (max-width: 800px){
+    #Left{
+        width:100%;
+        margin-left:0px; 
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px; 
+    } 
+    #Left #dp{
+        padding: 10px 0px 0px 0px;
+    }
+    #Hello{
+    display: none;
+    }
+    #Right{
+    margin-bottom: 50px;
+    height: auto;
+    width:100%;
+    float:left;
+    margin-top: 0px;
+    }
+    #portfolicontainer ul , #socialmedia ul{
+        padding-inline-start: 0px;
+    }
+     #Left .name{
+        display: block;
+    }
+    #Right .name{
+        display: none;
+    }
+    #Left .name h1{
+        font-size: 40px;
+    }
+}
