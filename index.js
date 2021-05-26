@@ -7,7 +7,7 @@ function typingEffect(){
         nameTypeId[0].innerText= txt.slice(0,i+1)+typingcur;
         nameTypeId[1].innerText= txt.slice(0,i+1)+typingcur;
         i++;
-        setTimeout(typingEffect,50);
+        setTimeout(typingEffect,100);
     }
     if(i==txt.length-1){
         nameTypeId[0].innerText= txt.slice(0,i+1);
