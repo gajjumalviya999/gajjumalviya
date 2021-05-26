@@ -30,9 +30,6 @@ body{
     text-align: center;
     padding: 10px 0px 0px 10px;   
 }
-#left .id img{
-    /* -webkit-filter: drop-shadow(1px 1px 0 black)  drop-shadow(-1px -1px 0 grey); */
-}
 #Right{
     margin-bottom: 50px;
     height: auto;
@@ -41,10 +38,6 @@ body{
     margin-top: 0px;
 }
 
-
-#Hello{
-    
-}
 #Left .name{
     display:none;
 }
@@ -184,5 +177,8 @@ footer{
     }
     #Left .name h1{
         font-size: 40px;
+    }
+    #downloadResume{
+        padding-left: 0px;
     }
 }
